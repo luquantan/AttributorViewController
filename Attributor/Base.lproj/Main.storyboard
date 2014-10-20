@@ -17,16 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CS193p Attribute Controller" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="wPa-En-Q38">
-                                <rect key="frame" x="194" y="28" width="213" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="FKo-lY-uUX"/>
-                                    <constraint firstAttribute="width" constant="213" id="ZY8-6F-G7h"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdQ-OS-LBx">
                                 <rect key="frame" x="16" y="57" width="568" height="413"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -117,6 +107,16 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                                     <action selector="changeBodySelectionColorToMatchBackgroundColorOfButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eMu-Sr-AH5"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="CS193p Attribute Controller" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPa-En-Q38">
+                                <rect key="frame" x="156" y="28" width="289" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="289" id="MPc-c4-ZBs"/>
+                                    <constraint firstAttribute="height" constant="21" id="XGp-PY-snz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -129,9 +129,8 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                             <constraint firstItem="h2T-Wc-PB4" firstAttribute="leading" secondItem="D57-l9-8Et" secondAttribute="trailing" constant="8" id="CNn-g8-xoi"/>
                             <constraint firstItem="rfU-9A-ywc" firstAttribute="top" secondItem="D57-l9-8Et" secondAttribute="bottom" constant="8" id="FDp-Oc-N7V"/>
                             <constraint firstItem="mX4-nE-gvt" firstAttribute="leading" secondItem="JRQ-FE-INK" secondAttribute="trailing" constant="8" id="FGW-aK-vcH"/>
+                            <constraint firstItem="wPa-En-Q38" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="GlI-l0-hLi"/>
                             <constraint firstItem="D57-l9-8Et" firstAttribute="top" secondItem="h2T-Wc-PB4" secondAttribute="top" id="HGm-tu-FkD"/>
-                            <constraint firstAttribute="centerX" secondItem="wPa-En-Q38" secondAttribute="centerX" id="Iyv-VI-k5Q"/>
-                            <constraint firstItem="wPa-En-Q38" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="K5n-26-HA3"/>
                             <constraint firstItem="D57-l9-8Et" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Sqg-Mi-72b"/>
                             <constraint firstItem="ozl-2j-ErU" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="VU3-1w-Wpo"/>
                             <constraint firstItem="mX4-nE-gvt" firstAttribute="width" secondItem="h2T-Wc-PB4" secondAttribute="width" id="Vo1-Kn-fbd"/>
@@ -139,8 +138,8 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ozl-2j-ErU" secondAttribute="bottom" constant="20" id="ZBj-vS-n6V"/>
                             <constraint firstItem="JRQ-FE-INK" firstAttribute="top" secondItem="h2T-Wc-PB4" secondAttribute="top" id="cUW-ye-AZX"/>
                             <constraint firstAttribute="trailingMargin" secondItem="mX4-nE-gvt" secondAttribute="trailing" id="g7m-fG-ltG"/>
-                            <constraint firstItem="vdQ-OS-LBx" firstAttribute="top" secondItem="wPa-En-Q38" secondAttribute="bottom" constant="8" id="hVv-Ll-gSN"/>
                             <constraint firstItem="mX4-nE-gvt" firstAttribute="width" secondItem="D57-l9-8Et" secondAttribute="width" id="pF3-Rx-ekC"/>
+                            <constraint firstItem="vdQ-OS-LBx" firstAttribute="top" secondItem="wPa-En-Q38" secondAttribute="bottom" constant="8" id="u7P-xs-csC"/>
                             <constraint firstItem="mX4-nE-gvt" firstAttribute="top" secondItem="vdQ-OS-LBx" secondAttribute="bottom" constant="8" id="umB-8m-LJa"/>
                             <constraint firstItem="h2T-Wc-PB4" firstAttribute="leading" secondItem="D57-l9-8Et" secondAttribute="trailing" constant="8" id="umb-yK-wJO"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rfU-9A-ywc" secondAttribute="bottom" constant="20" id="vsr-C9-hCC"/>
