@@ -37,12 +37,14 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfU-9A-ywc">
-                                <rect key="frame" x="16" y="550" width="49" height="30"/>
+                                <rect key="frame" x="16" y="550" width="64" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="49" id="OME-8q-SR4"/>
-                                    <constraint firstAttribute="height" constant="30" id="UqL-jB-Wy4"/>
+                                    <constraint firstAttribute="width" constant="64" id="0eV-Bc-o46"/>
+                                    <constraint firstAttribute="height" constant="30" id="tof-hp-ffV"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Outline">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -50,12 +52,14 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ozl-2j-ErU">
-                                <rect key="frame" x="518" y="550" width="66" height="30"/>
+                                <rect key="frame" x="513" y="550" width="71" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="66" id="JJc-CR-ki4"/>
-                                    <constraint firstAttribute="height" constant="30" id="jd4-VM-y2S"/>
+                                    <constraint firstAttribute="height" constant="30" id="bfL-mr-HNk"/>
+                                    <constraint firstAttribute="width" constant="71" id="gLm-rV-gVS"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Unoutline">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -69,6 +73,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                                     <constraint firstAttribute="height" constant="64" id="6se-pg-chY"/>
                                 </constraints>
                                 <state key="normal">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -117,30 +122,30 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ozl-2j-ErU" secondAttribute="bottom" constant="20" id="0cm-Wf-Dxt"/>
-                            <constraint firstItem="rfU-9A-ywc" firstAttribute="top" secondItem="D57-l9-8Et" secondAttribute="bottom" constant="8" id="2mi-bQ-Ulj"/>
-                            <constraint firstItem="ozl-2j-ErU" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="43R-Cz-IKI"/>
                             <constraint firstItem="JRQ-FE-INK" firstAttribute="leading" secondItem="h2T-Wc-PB4" secondAttribute="trailing" constant="8" id="6zv-tC-Dzh"/>
+                            <constraint firstItem="rfU-9A-ywc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="7qj-iw-yZ1"/>
                             <constraint firstItem="vdQ-OS-LBx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="8bg-FY-fIc"/>
                             <constraint firstItem="vdQ-OS-LBx" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="B0c-76-yMR"/>
                             <constraint firstItem="mX4-nE-gvt" firstAttribute="width" secondItem="JRQ-FE-INK" secondAttribute="width" id="BIj-ad-IQR"/>
                             <constraint firstItem="mX4-nE-gvt" firstAttribute="leading" secondItem="JRQ-FE-INK" secondAttribute="trailing" constant="8" id="Bic-SD-3sq"/>
                             <constraint firstItem="h2T-Wc-PB4" firstAttribute="leading" secondItem="D57-l9-8Et" secondAttribute="trailing" constant="8" id="CNn-g8-xoi"/>
+                            <constraint firstItem="rfU-9A-ywc" firstAttribute="top" secondItem="D57-l9-8Et" secondAttribute="bottom" constant="8" id="FDp-Oc-N7V"/>
                             <constraint firstItem="mX4-nE-gvt" firstAttribute="leading" secondItem="JRQ-FE-INK" secondAttribute="trailing" constant="8" id="FGW-aK-vcH"/>
                             <constraint firstItem="D57-l9-8Et" firstAttribute="top" secondItem="h2T-Wc-PB4" secondAttribute="top" id="HGm-tu-FkD"/>
                             <constraint firstAttribute="centerX" secondItem="wPa-En-Q38" secondAttribute="centerX" id="Iyv-VI-k5Q"/>
                             <constraint firstItem="wPa-En-Q38" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="K5n-26-HA3"/>
                             <constraint firstItem="D57-l9-8Et" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Sqg-Mi-72b"/>
+                            <constraint firstItem="ozl-2j-ErU" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="VU3-1w-Wpo"/>
                             <constraint firstItem="mX4-nE-gvt" firstAttribute="width" secondItem="h2T-Wc-PB4" secondAttribute="width" id="Vo1-Kn-fbd"/>
                             <constraint firstItem="JRQ-FE-INK" firstAttribute="top" secondItem="mX4-nE-gvt" secondAttribute="top" id="XUP-BG-7gh"/>
-                            <constraint firstItem="rfU-9A-ywc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Z95-cS-b5z"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ozl-2j-ErU" secondAttribute="bottom" constant="20" id="ZBj-vS-n6V"/>
                             <constraint firstItem="JRQ-FE-INK" firstAttribute="top" secondItem="h2T-Wc-PB4" secondAttribute="top" id="cUW-ye-AZX"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rfU-9A-ywc" secondAttribute="bottom" constant="20" id="fC9-wz-vG8"/>
                             <constraint firstAttribute="trailingMargin" secondItem="mX4-nE-gvt" secondAttribute="trailing" id="g7m-fG-ltG"/>
                             <constraint firstItem="vdQ-OS-LBx" firstAttribute="top" secondItem="wPa-En-Q38" secondAttribute="bottom" constant="8" id="hVv-Ll-gSN"/>
                             <constraint firstItem="mX4-nE-gvt" firstAttribute="width" secondItem="D57-l9-8Et" secondAttribute="width" id="pF3-Rx-ekC"/>
                             <constraint firstItem="mX4-nE-gvt" firstAttribute="top" secondItem="vdQ-OS-LBx" secondAttribute="bottom" constant="8" id="umB-8m-LJa"/>
                             <constraint firstItem="h2T-Wc-PB4" firstAttribute="leading" secondItem="D57-l9-8Et" secondAttribute="trailing" constant="8" id="umb-yK-wJO"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rfU-9A-ywc" secondAttribute="bottom" constant="20" id="vsr-C9-hCC"/>
                         </constraints>
                     </view>
                     <connections>
