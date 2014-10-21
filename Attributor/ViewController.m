@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "TextStatsViewController.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *headline;
@@ -18,18 +19,21 @@
 
 @implementation ViewController
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"Analyze Text"]) {
+        if ([segue.destinationViewController isKindOfClass:[TextStatsViewController class]]) {
+            TextStatsViewController *tsvc = (TextStatsViewController *)segue.destinationViewController;
+            tsvc.textToAnalyze = self.body.textStorage;
+        }
+    }
+}
 - (IBAction)changeBodySelectionColorToMatchBackgroundColorOfButton:(UIButton *)sender
 {
     [self.body.textStorage addAttribute:NSForegroundColorAttributeName
                                   value:sender.backgroundColor
                                   range:self.body.selectedRange];
 }
-//- (IBAction)outlineBodySelection:(id)sender
-//{
-//    [self.body.textStorage addAttributes:@{NSStrokeWidthAttributeName : @-3 ,
-//                                           NSStrokeColorAttributeName : [UIColor blackColor]}
-//                                   range:self.body.selectedRange];
-//}
 
 - (IBAction)outlineBodySelection:(UIButton *)sender
 {
