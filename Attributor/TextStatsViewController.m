@@ -19,7 +19,7 @@
 - (void) viewDidLoad
 {
     [super viewDidLoad];
-    
+    NSLog(@"\n\nView Did Load \n\n");
 //    self.textToAnalyze = [[NSAttributedString alloc]initWithString:@"test" attributes:@{NSForegroundColorAttributeName : [UIColor greenColor], NSStrokeWidthAttributeName : @-3}];
     //this is for testing purposes. this will set the "model" for this MVC directly after the view loads.
     
@@ -28,7 +28,10 @@
 {
     _textToAnalyze = textToAnalyze;
     if (self.view.window) { // If nil, im not on screen, then let viewWillAppear updateUI for me.
+        NSLog(@"Visible, actually running");
         [self updateUI];
+    } else {
+        NSLog(@"Not visible, not running");
     }
 }
 

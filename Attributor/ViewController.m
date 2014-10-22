@@ -22,6 +22,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"Analyze Text"]) {
+        NSLog(@"Preparing for segue");
         if ([segue.destinationViewController isKindOfClass:[TextStatsViewController class]]) {
             TextStatsViewController *tsvc = (TextStatsViewController *)segue.destinationViewController;
             tsvc.textToAnalyze = self.body.textStorage;
