@@ -10,7 +10,6 @@
 #import "TextStatsViewController.h"
 
 @interface ViewController ()
-@property (weak, nonatomic) IBOutlet UILabel *headline;
 @property (weak, nonatomic) IBOutlet UITextView *body;
 @property (weak, nonatomic) IBOutlet UIButton *outlineButton;
 @property (weak, nonatomic) IBOutlet UIButton *unoutlineButton;
@@ -58,15 +57,17 @@
     [outlineTitle setAttributes:@{NSStrokeWidthAttributeName : @3 ,
                                   NSStrokeColorAttributeName : self.outlineButton.tintColor}
                           range:NSMakeRange(0, [outlineTitle length])];
-    [self.outlineButton setAttributedTitle:outlineTitle forState:UIControlStateNormal]; //unlike textlabel, must get the button, edit it, and set it
-    
+    self.outlineButton.titleLabel.attributedText = outlineTitle;
+//    [self.outlineButton setAttributedTitle:outlineTitle forState:UIControlStateNormal];  //unlike textlabel, must get the button, edit it, and set it
+
     //Set attribute of Unoutline button after loading the view
     NSMutableAttributedString *unoutlineTitle = [[NSMutableAttributedString alloc] initWithString:self.unoutlineButton.currentTitle];
     
     [unoutlineTitle setAttributes:@{NSStrokeWidthAttributeName : @3 ,
                                     NSStrokeColorAttributeName : self.unoutlineButton.tintColor}
                             range: NSMakeRange(0, [unoutlineTitle length])];
-    [self.unoutlineButton setAttributedTitle:unoutlineTitle forState:UIControlStateNormal];
+    self.unoutlineButton.titleLabel.attributedText = unoutlineTitle;
+//    [self.unoutlineButton setAttributedTitle:unoutlineTitle forState:UIControlStateNormal];
 }
 
 - (void)didReceiveMemoryWarning {
