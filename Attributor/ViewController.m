@@ -57,8 +57,7 @@
     [outlineTitle setAttributes:@{NSStrokeWidthAttributeName : @3 ,
                                   NSStrokeColorAttributeName : self.outlineButton.tintColor}
                           range:NSMakeRange(0, [outlineTitle length])];
-    self.outlineButton.titleLabel.attributedText = outlineTitle;
-//    [self.outlineButton setAttributedTitle:outlineTitle forState:UIControlStateNormal];  //unlike textlabel, must get the button, edit it, and set it
+    [self.outlineButton setAttributedTitle:outlineTitle forState:UIControlStateNormal];  //unlike textlabel, must get the button, edit it, and set it
 
     //Set attribute of Unoutline button after loading the view
     NSMutableAttributedString *unoutlineTitle = [[NSMutableAttributedString alloc] initWithString:self.unoutlineButton.currentTitle];
@@ -66,8 +65,7 @@
     [unoutlineTitle setAttributes:@{NSStrokeWidthAttributeName : @3 ,
                                     NSStrokeColorAttributeName : self.unoutlineButton.tintColor}
                             range: NSMakeRange(0, [unoutlineTitle length])];
-    self.unoutlineButton.titleLabel.attributedText = unoutlineTitle;
-//    [self.unoutlineButton setAttributedTitle:unoutlineTitle forState:UIControlStateNormal];
+    [self.unoutlineButton setAttributedTitle:unoutlineTitle forState:UIControlStateNormal];
 }
 
 - (void)didReceiveMemoryWarning {
